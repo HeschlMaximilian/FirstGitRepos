@@ -1,6 +1,32 @@
+*{
+    font-family: sans-serif;
+}
 nav{
     margin: 20px;
     background-color: aliceblue;
-    font-size: 40;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
     
+}
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+label{
+    padding: 10px;
+    margin: 10px;
+}
+#Submit{
+    background-color: lightblue;
+    border-color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+a{
+    margin: 10px;
+    padding: 10px
 }
