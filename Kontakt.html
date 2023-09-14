@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css.css">
+    <script type="javascript" src="javascript.js"></script>
 </head>
 <body>
     <nav>
@@ -17,11 +18,28 @@
         <input id="anliegen" type="text"/>
         <br>
         <label for="mail">Email</label>
-        <input id="mail" type="text"/>
+        <input id="mail" id="email" type="text" id="textInput"/>
         <br>
-        <input type="submit" id="Submit"value="Abschicken">
+        <button id="Submit" onclick="checkMail()">Abschicken</button>
         <br>
         <a>Sie werden in kürze eine Antwort von uns per Mail bekommen</a>
       </form>
 </body>
 </html>
+
+<script>
+    function checkMail(){
+
+alert("Dies ist eine ungültige Email");
+var mail = document.getElementById('email').value;
+if (mail.includes('@')) {
+    document.getElementById('textInput').value= "";
+    document.getElementById('email').value = "";
+    console.log('test');
+} 
+
+else {
+}
+}
+
+</script>
