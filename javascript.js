@@ -14,3 +14,4 @@ function checkMail(){
 function logToConsole(){
     console.log("TEst")
 }
+
